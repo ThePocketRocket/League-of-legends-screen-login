@@ -14,8 +14,8 @@
                 <img src="imgs/riotgameslogo.png" alt="Riot Games Logo" id="logoRiot">
     
                 <h1>Fazer Login</h1>
-                <input type="text" name="" id="user" placeholder="NOME DE USUÁRIO">
-                <input type="password" name="" id="password" placeholder="SENHA">
+                <input type="text" name="" id="user" placeholder="NOME DE USUÁRIO" onchange="activeButton()">
+                <input type="password" name="" id="password" placeholder="SENHA" onchange="activeButton()">
     
                 <div id="buttonsLogin">
                     <button type="button" id="buttonFacebook"><img src="imgs/facebook.png" alt="Login Facebook"></button>
@@ -23,13 +23,16 @@
                     <button type="button" id="buttonApple"><img src="imgs/apple.png" alt="Login Apple"></button>
                     <button type="button" id="buttonXbox"><img src="imgs/xbox.png" alt="Login Xbox"></button>
                 </div>
-                <input type="checkbox" name="Lembrar" id="lembrar">
-    
-                <button type="submit"><img src="imgs/seta-direita.png" alt="Botão Login"></button>
-    
-                <a href="http://https://recovery.riotgames.com/pt-br?region=BR1">NÃO CONSEGUE INICIAR SEÇÃO?</a>
-                <a href="http://https://signup.leagueoflegends.com/pt-br/signup/index#/">CRIAR CONTA</a>
 
+                <div id="lembrar" onclick="">
+                    <input type="checkbox" name="Lembrar">
+                    <p>Manter login</p>                    
+                </div>
+    
+                <button type="submit" id="continueButton"><img src="imgs/seta-direita.png" alt="Botão Login"></button>
+    
+                <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">NÃO CONSEGUE INICIAR SEÇÃO?</a>
+                <a href="https://signup.leagueoflegends.com/pt-br/signup/index#/" target="_blank">CRIAR CONTA</a>
             </div>
         </section>
         
